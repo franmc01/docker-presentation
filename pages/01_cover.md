@@ -17,6 +17,7 @@ title: Introduction
 mdc: true
 monaco: true
 monacoTypesSource: local
+hideInToc: true
 ---
 
 # Docker Deep Dive
