@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: fade-out
 ---
 
 # Understanding Docker Volumes

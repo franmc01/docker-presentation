@@ -35,6 +35,10 @@ src: ./pages/09_docker_commands_2.md
 ---
 
 ---
+src: ./pages/09.1_docker_images.md
+---
+
+---
 src: ./pages/10_introduction_docker_volumes.md
 ---
 
@@ -59,5 +63,13 @@ src: ./pages/15_docker_networking_types_2.md
 ---
 
 ---
-src: ./pages/16_managing__docker_networks.md
+src: ./pages/16_managing_docker_networks.md
+---
+
+---
+src: ./pages/17_dockerfile.md
+---
+
+---
+src: ./pages/18_dockerfile_multistage.md
 ---

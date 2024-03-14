@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: fade-out
 ---
 
 # Managing Docker Networks
@@ -19,16 +19,3 @@ Docker provides powerful tools for networking, offering flexibility and control 
   ```bash
   docker run -d --name my_container --network my_network my_image
   ```
-
-- **Isolating Containers:**
-  Use the `none` network to completely isolate a container from external networks.
-  ```bash
-  docker run -d --name isolated_container --network none my_image
-  ```
-
-- **Leveraging the Host Network:**
-  For performance-critical applications, use the host's network stack.
-  ```bash
-  docker run -d --name performance_container --network host my_image
-  ```
-```

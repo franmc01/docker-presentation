@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: fade-out
 ---
 
 # Docker Basics - Part 2
