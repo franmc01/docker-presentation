@@ -92,34 +92,61 @@ Harness Docker Compose for efficient multi-container orchestration.
 transition: slide-up
 ---
 
-# NestJS & PostgreSQL with Docker Compose
+# Docker Compose Real Example: Part 1
 
-A streamlined setup for orchestrating a NestJS app alongside a PostgreSQL database using Docker Compose.
+Setting up our Vue.js application within a Docker container.
 
 ```yaml
-version: '3.9' # Use the latest supported version
+version: '3.9'
+
 services:
-  app:
-    build: .
+  vue-app:
+    build:
+      context: ./vue-app
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    environment:
-      DATABASE_URL: postgresql://user:password@db:5432/dbname
-    depends_on:
-      - db
-  db:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: dbname
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-volumes:
-  postgres_data:
+      - "5000:80"
+    container_name: vue-app-container
+    networks:
+      - tt-network-compose
 ```
 
-<div class="absolute bottom-0 right-0 mb-4 mr-4 text-9xl">
+This part of our `docker-compose.yml` focuses on building and running the Vue app, exposing it on port 5000.
+
+<div class="absolute bottom-0 right-0 mb-4 mr-4 text-6xl">
+  🌐
+</div>
+
+
+---
+transition: slide-up
+---
+
+# Docker Compose Real Example: Part 2
+
+Continuing with our NestJS app and custom network setup.
+
+```yaml
+services:
+  nest-app:
+    build:
+      context: ./nest-app
+      dockerfile: Dockerfile
+    ports:
+      - "5001:3000"
+    container_name: nest-app-container
+    networks:
+      - tt-network-compose
+
+networks:
+  tt-network-compose:
+    name: tt-network-compose
+    driver: bridge
+```
+
+Here we add our NestJS app to the Docker Compose configuration, exposing it on port 5001, and define the `tt-network-compose` network.
+
+<div class="absolute bottom-0 right-0 mb-4 mr-4 text-6xl">
   🛠️
 </div>
 

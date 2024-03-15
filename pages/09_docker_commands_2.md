@@ -7,23 +7,24 @@ level: 2
 Now let's see how to set environment variables and expose ports when running containers.
 
 ```bash
-# Run a PostgreSQL container with an environment variable
-docker run -d --name dev-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres
-
-# Alternate syntax, same effect
-docker run -d --name dev-postgres \
-  -e POSTGRES_PASSWORD=mysecretpassword postgres
-
-# Expose an Nginx container's port to make it accessible on the host
+# Run an Nginx container, exposing port 8080 on the host
 docker run -d --name my-nginx -p 8080:80 nginx
 
+# Run a PostgreSQL container, exposing port 5432, with custom user and password
+docker run -d --name dev-postgres -e POSTGRES_USER=team -e POSTGRES_PASSWORD=time -p 5432:5432 postgres
 
-# Start an app container with multiple environment variables
-docker run -d --name my-widget -e VAR1=value1 -e VAR2=value2 myapp
+# Run a PostgreSQL container with environment variables, in multiline for clarity
+docker run -d --name dev-postgres \
+  -e POSTGRES_USER=team \
+  -e POSTGRES_PASSWORD=time \
+  -p 5432:5432 \
+  postgres
+
+# Run a command in PowerShell, multiline syntax
+docker run -d --name dev-postgres `
+  -e POSTGRES_USER=team `
+  -e POSTGRES_PASSWORD=time `
+  -p 9090:5432 `
+  postgres
+
 ```
-
-Try these out:
-
-- PostgreSQL Database: Create a container with a secure password.
-- Nginx Web Server: Make a simple web server accessible through port 8080.
-- Custom App Container: Demonstrate configuring an app with multiple environment settings.

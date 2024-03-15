@@ -4,23 +4,23 @@ level: 2
 
 # Introducing Docker Commands
 
-Having seen the variety of commands available, let's try out some of the most frequently used Docker commands.
+Explore commonly used Docker commands through a practical demonstration.
 
 ```bash {all|1-2|4-5|7-8|10-11|13-14}
 # Pull an image from Docker Hub
-docker pull nginx
+docker pull hello-world
 
-# Run a container from the nginx image
-docker run -d --name my-nginx -p 8080:80 nginx
+# Run a container from the hello-world image
+docker run --name first-container hello-world
 
 # List running containers
-docker ps
+docker ps -a
 
-# Stop the container named 'my-nginx'
-docker stop my-nginx
+# Stop the container named 'first-container'
+docker stop first-container
 
-# Remove the container named 'my-nginx'
-docker rm my-nginx
+# Remove the container named 'first-container'
+docker rm first-container
 ```
 
 <div class="absolute right-16 bottom-6 text-9xl animate-fade-in">
