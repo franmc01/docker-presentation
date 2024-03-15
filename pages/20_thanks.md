@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <div class="text-center thank-you-slide">

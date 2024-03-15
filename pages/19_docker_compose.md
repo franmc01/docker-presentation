@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <div class="text-center">
@@ -30,7 +30,7 @@ transition: slide-up
 </style>
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # What is Docker Compose?
@@ -49,7 +49,7 @@ Docker Compose simplifies managing multi-container Docker applications. With a s
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Docker Compose: Basic Concepts
@@ -68,7 +68,7 @@ These concepts enable the design and operation of complex applications.
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Docker Compose: Expanded Use Cases
@@ -89,7 +89,7 @@ Harness Docker Compose for efficient multi-container orchestration.
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Docker Compose Real Example: Part 1
@@ -119,7 +119,7 @@ This part of our `docker-compose.yml` focuses on building and running the Vue ap
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Docker Compose Real Example: Part 2
@@ -152,7 +152,7 @@ Here we add our NestJS app to the Docker Compose configuration, exposing it on p
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Key Takeaways

@@ -1,5 +1,5 @@
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <div class="text-center big-title">
@@ -26,7 +26,7 @@ transition: slide-up
 
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Comprehending Dockerfile
@@ -50,7 +50,7 @@ A Dockerfile is a text document that contains all the commands a user could call
 </div>
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Dockerfile Fundamentals
@@ -70,7 +70,7 @@ Simple, yet powerful commands to package your application.
 </div>
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Advanced Dockerfile Instructions
@@ -90,7 +90,7 @@ More tools for a fine-tuned Docker experience.
 </div>
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Simple Dockerfile Example for a Web Application
