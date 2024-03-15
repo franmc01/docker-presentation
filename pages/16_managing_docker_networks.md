@@ -1,5 +1,6 @@
 ---
 transition: fade-out
+hideInToc: true
 ---
 
 # Managing Docker Networks

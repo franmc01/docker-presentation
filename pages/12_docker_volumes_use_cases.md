@@ -1,5 +1,6 @@
 ---
 transition: fade-out
+hideInToc: true
 ---
 
 # Docker Volumes: Use Cases and Pro Tips

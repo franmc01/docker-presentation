@@ -1,5 +1,6 @@
 ---
 transition: slide-up
+hideInToc: true
 ---
 
 <div class="text-center">

@@ -1,6 +1,7 @@
 ---
 transition: fade-out
 background: https://source.unsplash.com/collection/94734566/1920x1080
+hideInToc: true
 ---
 
 # Discovering Docker Commands 

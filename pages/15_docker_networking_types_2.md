@@ -1,5 +1,6 @@
 ---
 transition: fade-out
+hideInToc: true
 ---
 
 # Docker Networking Types - Part 2

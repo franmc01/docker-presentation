@@ -122,6 +122,7 @@ CMD ["node", "app.js"]
 
 ---
 layout: default
+hideInToc: true
 ---
 
 # Advanced Dockerfile for a NestJS App (Part 1)
@@ -150,6 +151,7 @@ RUN npm install --only=production
 
 ---
 layout: default
+hideInToc: true
 ---
 
 # Advanced Dockerfile for a NestJS App (Part 2)

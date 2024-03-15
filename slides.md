@@ -73,3 +73,11 @@ src: ./pages/17_dockerfile.md
 ---
 src: ./pages/18_dockerfile_multistage.md
 ---
+
+---
+src: ./pages/19_docker_compose.md
+---
+
+---
+src: ./pages/20_thanks.md
+---
